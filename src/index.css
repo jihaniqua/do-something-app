@@ -23,6 +23,10 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 300 !important;
 }
 
+h1 {
+    font-weight: 700 !important;
+}
+
 /* Activities */
 .activities {
     font-size: 350%;

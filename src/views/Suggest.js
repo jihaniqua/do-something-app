@@ -40,28 +40,28 @@ function Suggest() {
 
     return (
         <div className="container">
-            <section className="col-lg-6">
+            <section className="col-lg-6 mb-4">
                 <h1>Suggest a new activity</h1>
                 <p>Having a list of things to do is a great way to encourage yourself and your family to build these activity days in your calendar. <a href="/my-list">See what others have suggested.</a></p>
-                <form onSubmit={handleSubmit}>
-                    {/* Activity input field */}
-                    <fieldset className="form-floating mb-3">
-                        <input type="text" className="form-control" id="activity" placeholder="Activity" name="activity" value={formData.activity} onChange={handleChange}></input>
-                        <label htmlFor="activity" className="form-label">Activity</label>
-                    </fieldset>
-                    {/* Category input field */}
-                    <fieldset className="form-floating mb-3">
-                        <input type="text" className="form-control" id="category" placeholder="Category" name="category" value={formData.category} onChange={handleChange}></input>
-                        <label htmlFor="category" className="form-label">Category</label>
-                    </fieldset>
-                    {/* Description text field */}
-                    <fieldset className="form-floating mb-3">
-                        <input type="text" className="form-control" id="description" placeholder="Describe the activity" name="description" value={formData.description} onChange={handleChange} />
-                        <label htmlFor="description" className="form-label">Description</label>
-                    </fieldset>
-                    <button type="submit" className="btn btn-dark">Submit</button>
-                </form>
             </section>
+            <form className="col-lg-7" onSubmit={handleSubmit}>
+                {/* Activity input field */}
+                <fieldset className="form-floating mb-3">
+                    <input type="text" className="form-control" id="activity" placeholder="Activity" name="activity" value={formData.activity} onChange={handleChange}></input>
+                    <label htmlFor="activity" className="form-label">Activity</label>
+                </fieldset>
+                {/* Category input field */}
+                <fieldset className="form-floating mb-3">
+                    <input type="text" className="form-control" id="category" placeholder="Category" name="category" value={formData.category} onChange={handleChange}></input>
+                    <label htmlFor="category" className="form-label">Category</label>
+                </fieldset>
+                {/* Description text field */}
+                <fieldset className="form-floating mb-3">
+                    <input type="text" className="form-control" id="description" placeholder="Describe the activity" name="description" value={formData.description} onChange={handleChange} />
+                    <label htmlFor="description" className="form-label">Description</label>
+                </fieldset>
+                <button type="submit" className="btn btn-dark">Submit</button>
+            </form>
         </div>
     )
 }

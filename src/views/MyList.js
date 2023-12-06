@@ -34,9 +34,11 @@ function MyList() {
 
     return (
         <div className="container">
-            <h1>My List</h1>
-            <p>Description</p>
-            <div className="row">
+            <section className="col-lg-6 mb-4">
+                <h1>My List</h1>
+                <p>Stay curious and try new things to improve your memory, mood and motivation. Pick an activity from your saved list and start today!</p>
+            </section>
+            <section className="row">
                 {/* sampleList data */}
                 {sampleList.map((activity) => (
                     <div className="col-4 mb-4">
@@ -51,17 +53,17 @@ function MyList() {
                 ))}
                 {/* Suggest page form data */}
                 {moreActivity.map((value, index) => (
-                <div className="col-4 mb-4">
-                    <div className="card text-bg-light p-2" key={index}>
-                        <div className="card-body">
-                            <h6 className="badge rounded-pill text-bg-secondary card-subtitle mb-3">{value.category}</h6>
-                            <h5 className="card-title">{value.activity}</h5>
-                            <p className="card-text">{value.description}</p>
+                    <div className="col-4 mb-4">
+                        <div className="card text-bg-light p-2" key={index}>
+                            <div className="card-body">
+                                <h6 className="badge rounded-pill text-bg-secondary card-subtitle mb-3">{value.category}</h6>
+                                <h5 className="card-title">{value.activity}</h5>
+                                <p className="card-text">{value.description}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            ))}
-            </div>
+                ))}
+            </section>
         </div>
     );
 }

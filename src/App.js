@@ -10,7 +10,6 @@ import MyList from "./views/MyList";
 
 // dependencies
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState } from "react";
 
 function App() {
     return (
