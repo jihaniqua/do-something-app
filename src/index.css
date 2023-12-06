@@ -1,23 +1,38 @@
-/* Google Fonts - Bricolage Grotesque & Inter */
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap');
+/* Google Fonts - Inter */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* Global */
 *,
 html,
 body {
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    color: #000000;
 }
 
 body {
     background-image: linear-gradient(#f9d34b, #f5f1e8);
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    color: #000000;
+}
+
+/* App Name */
+.navbar-brand h1 {
+    text-transform: uppercase;
+    font-weight: 300 !important;
+}
+
+/* Activities */
+.activities {
+    font-size: 350%;
+    font-weight: 900;
+    min-height: 140px;
+}
+
 /* Main */
 main {
-    padding: 100px 0 0;
+    padding: 160px 0;
 }
 
 /* Footer */

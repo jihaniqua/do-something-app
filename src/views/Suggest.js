@@ -1,4 +1,6 @@
-function About() {
+import { useState, useEffect } from "react";
+
+function Suggest() {
   return (
     <div className="container">
       <div className="py-5">
@@ -12,4 +14,4 @@ function About() {
   )
 }
 
-export default About;
+export default Suggest;
