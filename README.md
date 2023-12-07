@@ -17,4 +17,6 @@ Collect form values and stores them in session storage upon submitssion for use 
 ### My List
 Retrieves stored form values from session storage and and displays them in cards below existing cards, containing a different set of values from an array.
 
-## Live site
+## Links
+- <a href="https://www.do-something-app.onrender.com">Live site</a>
+- <a href="https://www.loom.com/share/e843659223dc4b9aab4eab84a873b188?sid=beddfadb-f2ab-4e11-aac3-954ed41b5e71">Loom video</a>
