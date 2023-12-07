@@ -1,6 +1,6 @@
 # Do Something Web App
 
-Do Something allows users to generate activites, submit their own activity suggestions and display all suggested activities. I used [https://boredapi.com]Bored API and arrays for the data.
+Do Something allows users to generate activites, submit their own activity suggestions and display all suggested activities. I used <a href="https://boredapi.com/">Board API</a> and arrays for the data.
 This is Assignment 2 for COMP 2112 - Adv Client-Side JavaScript.
 
 ## Assignment goals
