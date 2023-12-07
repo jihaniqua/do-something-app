@@ -27,12 +27,12 @@ function Suggest() {
     }
 
     // to check if form data is stored
-    let storedFormData = sessionStorage.getItem('newActivity');
+    /*let storedFormData = sessionStorage.getItem('newActivity');
     if (storedFormData !== null) {
         console.log('Successful')
     } else {
         console.log('No data stored');
-    }
+    } */
 
     useEffect(() => {
         document.title = 'Suggest New Activity';
