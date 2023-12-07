@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 function MyList() {
     // get Suggest page form data from session storage
@@ -29,7 +29,7 @@ function MyList() {
     ]
 
     useEffect(() => {
-        document.title = 'Suggest an activity';
+        document.title = 'My List';
     }, []);
 
     return (
@@ -56,7 +56,7 @@ function MyList() {
                     <div className="col-4 mb-4">
                         <div className="card text-bg-light p-2" key={index}>
                             <div className="card-body">
-                                <h6 className="badge rounded-pill text-bg-secondary card-subtitle mb-3">{value.category}</h6>
+                                <h6 className="badge rounded-pill text-bg-secondary card-subtitle mb-3">{value.category.toLowerCase()}</h6>
                                 <h5 className="card-title">{value.activity}</h5>
                                 <p className="card-text">{value.description}</p>
                             </div>
