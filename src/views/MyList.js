@@ -41,7 +41,7 @@ function MyList() {
             <section className="row">
                 {/* sampleList data */}
                 {sampleList.map((activity) => (
-                    <div className="col-4 col-sm-12 mb-4">
+                    <div className="col-lg-4 col-sm-12 mb-4">
                         <div className="card text-bg-light p-2" key={activity.id}>
                             <div className="card-body">
                                 <h6 className="badge rounded-pill text-bg-secondary card-subtitle mb-3">{activity.category}</h6>
@@ -53,7 +53,7 @@ function MyList() {
                 ))}
                 {/* Suggest page form data */}
                 {moreActivity.map((value, index) => (
-                    <div className="col-4 col-sm-12 mb-4">
+                    <div className="col-lg-4 col-sm-12 mb-4">
                         <div className="card text-bg-light p-2" key={index}>
                             <div className="card-body">
                                 <h6 className="badge rounded-pill text-bg-secondary card-subtitle mb-3">{value.category.toLowerCase()}</h6>
